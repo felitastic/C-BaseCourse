@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyEnumerable2.cs" />
+    <Compile Include="MyEnumerator2.cs" />
+    <Compile Include="MyEnumerator.cs" />
+    <Compile Include="MyEnumerable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

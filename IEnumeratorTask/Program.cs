@@ -9,39 +9,13 @@ namespace IEnumeratorTask
     static class Program
     {
         public static IEnumerable<string> Every2nd(this IEnumerable<string> arg)
-        {
-            bool outputLine = true;
-
-           foreach(var line in arg)
-            {
-                if (outputLine)
-                {
-                    yield return line;
-                    outputLine = false;
-                }
-                else
-                {
-                    outputLine = true;
-                }
-            }
+        {           
+            return new MyEnumerable(arg);
         }
 
         public static IEnumerable<string> MyTake(this IEnumerable<string> arg, int lineCount)
         {
-            int writtenLines = 0;
-
-            foreach (var line in arg)
-            {
-                if (writtenLines < lineCount)
-                {                    
-                    yield return line;
-                    writtenLines += 1;
-                }
-                else
-                {
-                    yield break;
-                }
-            }
+            return new MyEnumerable2(arg, lineCount);
         }
 
         // Ctrl + F5 um Konsole anzuhalten
@@ -50,14 +24,10 @@ namespace IEnumeratorTask
             //foreach (var line in System.IO.File.ReadAllLines(@"..\..\Program.cs").Every2nd())
             //{
             //    Console.WriteLine(line);
-            //}            
-            
-            //foreach (var line in System.IO.File.ReadAllLines(@"..\..\Program.cs").MyTake(6))
-            //{
-            //    Console.WriteLine(line);
+            //   
             //}
 
-            foreach (var line in System.IO.File.ReadAllLines(@"..\..\Program.cs").MyTake(6).Every2nd())
+            foreach(var line in System.IO.File.ReadAllLines(@"..\..\Program.cs").MyTake(6).Every2nd())
             {
                 Console.WriteLine(line);
             }
