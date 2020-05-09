@@ -9,16 +9,3 @@ C:\Projekte\MultimapBeiThomas\Multimap\obj\Debug\netcoreapp3.0\Multimap.Assembly
 C:\Projekte\MultimapBeiThomas\Multimap\obj\Debug\netcoreapp3.0\Multimap.AssemblyInfo.cs
 C:\Projekte\MultimapBeiThomas\Multimap\obj\Debug\netcoreapp3.0\Multimap.dll
 C:\Projekte\MultimapBeiThomas\Multimap\obj\Debug\netcoreapp3.0\Multimap.pdb
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\bin\Debug\netcoreapp3.0\Multimap.exe
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\bin\Debug\netcoreapp3.0\Multimap.deps.json
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\bin\Debug\netcoreapp3.0\Multimap.runtimeconfig.json
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\bin\Debug\netcoreapp3.0\Multimap.runtimeconfig.dev.json
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\bin\Debug\netcoreapp3.0\Multimap.dll
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\bin\Debug\netcoreapp3.0\Multimap.pdb
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\obj\Debug\netcoreapp3.0\Multimap.csprojAssemblyReference.cache
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\obj\Debug\netcoreapp3.0\Multimap.csproj.CoreCompileInputs.cache
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\obj\Debug\netcoreapp3.0\Multimap.AssemblyInfoInputs.cache
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\obj\Debug\netcoreapp3.0\Multimap.AssemblyInfo.cs
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\obj\Debug\netcoreapp3.0\Multimap.dll
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\obj\Debug\netcoreapp3.0\Multimap.pdb
-C:\Projekte\Vorlesungen\PR320\C#BaseCourse\Multimap\obj\Debug\netcoreapp3.0\Multimap.genruntimeconfig.cache

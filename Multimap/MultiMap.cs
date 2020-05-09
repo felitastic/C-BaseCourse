@@ -13,13 +13,6 @@ namespace Multimap
 
     public class MultiMap<K, V> : IMultiMap<K, V>
     {
-        /*
-         funktor, der prüft ob hinzugefügte werte erlaubt sind
-         funktor -> delegate
-         test ob neue werte != null soll hierdurch ersetzt werden
-        */
-
-
         //all keys
         public IEnumerable<K> Keys => map.Keys;
 
@@ -54,7 +47,13 @@ namespace Multimap
         private Dictionary<K, List<V>> map = new Dictionary<K, List<V>>();
         private ValueCheck<V> isValueNull;
 
-        public MultiMap(ValueCheck<V> _valueCheck) 
+        public event ChangeKey<K> RemoveKey;
+        public event ChangeKey<K> AddKey;
+        public event ChangeValue<V> AddValue;
+        public event ChangeValue<V> RemoveValue;
+        public event CheckKeyValuePair<K, V> DeleteKeyValuePair;
+
+        public MultiMap(ValueCheck<V> _valueCheck)
         {
             isValueNull = _valueCheck;
         }
@@ -95,7 +94,7 @@ namespace Multimap
         }
 
         public void Add(K _key, V _newValue)
-        {            
+        {
             if (isValueNull(_newValue))
                 throw new NullNotAllowedException("Null not allowed as value");
 
@@ -103,10 +102,13 @@ namespace Multimap
 
             if (map.TryGetValue(_key, out tempValues))
             {
+                AddValue?.Invoke(_newValue);
                 tempValues.Add(_newValue);
             }
             else
             {
+                AddKey?.Invoke(_key);
+
                 tempValues = new List<V>();
                 tempValues.Add(_newValue);
                 map.Add(_key, tempValues);
@@ -121,8 +123,13 @@ namespace Multimap
             {
                 if (tempValues.Remove(_ValueToRemove))
                 {
+                    RemoveValue?.Invoke(_ValueToRemove);
+
                     if (tempValues.Count == 0)
+                    {
+                        RemoveKey?.Invoke(_key);
                         map.Remove(_key);
+                    }
                 }
                 else
                     Console.WriteLine("The value " + _ValueToRemove + " could not be found in association with " + _key);
@@ -136,11 +143,31 @@ namespace Multimap
         public void Add<K2, V2>(IMultiMap<K2, V2> newMultiMap)
             where K2 : K
             where V2 : V
-        {                       
+        {
             foreach (K2 newKey in newMultiMap.Keys)
             {
                 foreach (V2 newValue in newMultiMap[newKey])
                     Add(newKey, newValue);
+            }
+        }
+
+        public void RemoveAll(CheckKeyValuePair<K, V> checkKeyValuePair)
+        {
+            List<K> keysToDelete = new List<K>();
+
+            foreach (KeyValuePair<K, List<V>> pair in map)
+            {
+                pair.Value.RemoveAll(value => checkKeyValuePair(pair.Key, value));
+
+                if (pair.Value.Count == 0)
+                {
+                    keysToDelete.Add(pair.Key);
+                }
+            }
+
+            foreach (K key in keysToDelete)
+            {
+                map.Remove(key);
             }
         }
     }
