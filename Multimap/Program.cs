@@ -10,8 +10,8 @@ namespace Multimap
             var v2 = new MyClass("plane");
             var v3 = new MyClass("NPC2");
             var v4 = new MyClass2("NPC2");
-            var test = new MultiMap<string, MyClass>();
-            var test2 = new MultiMap<string, MyClass2>();
+            var test = new MultiMap<string, MyClass>(value => value == null); 
+            var test2 = new MultiMap<string, MyClass2>(value => value == null);
 
             try
             {

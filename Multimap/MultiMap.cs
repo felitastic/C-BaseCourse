@@ -9,8 +9,17 @@ namespace Multimap
         public NullNotAllowedException(string msg) : base(msg) { }
     };
 
+    public delegate bool ValueCheck<V>(V newValue);
+
     public class MultiMap<K, V> : IMultiMap<K, V>
     {
+        /*
+         funktor, der prüft ob hinzugefügte werte erlaubt sind
+         funktor -> delegate
+         test ob neue werte != null soll hierdurch ersetzt werden
+        */
+
+
         //all keys
         public IEnumerable<K> Keys => map.Keys;
 
@@ -43,6 +52,12 @@ namespace Multimap
         }
 
         private Dictionary<K, List<V>> map = new Dictionary<K, List<V>>();
+        private ValueCheck<V> isValueNull;
+
+        public MultiMap(ValueCheck<V> _valueCheck) 
+        {
+            isValueNull = _valueCheck;
+        }
 
         public IEnumerator<KeyValuePair<K, V>> GetEnumerator()
         {
@@ -81,7 +96,7 @@ namespace Multimap
 
         public void Add(K _key, V _newValue)
         {            
-            if (_newValue == null)
+            if (isValueNull(_newValue))
                 throw new NullNotAllowedException("Null not allowed as value");
 
             List<V> tempValues;
