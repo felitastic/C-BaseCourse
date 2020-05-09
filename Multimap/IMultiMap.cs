@@ -16,7 +16,11 @@ namespace Multimap
 
         void Add(K _key, V _newValue);
 
-        void Remove(K _key, V _ValueToRemove);
+        void Add<K2,V2>(IMultiMap<K2, V2> newMultiMap) 
+            where K2: K 
+            where V2: V;
+
+        void Remove(K _key, V _ValueToRemove);        
 
     }
 

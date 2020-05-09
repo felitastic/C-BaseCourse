@@ -4,6 +4,11 @@ using System.Collections.Generic;
 
 namespace Multimap
 {
+    public class NullNotAllowedException : ApplicationException
+    {
+        public NullNotAllowedException(string msg) : base(msg) { }
+    };
+
     public class MultiMap<K, V> : IMultiMap<K, V>
     {
         //all keys
@@ -75,7 +80,10 @@ namespace Multimap
         }
 
         public void Add(K _key, V _newValue)
-        {
+        {            
+            if (_newValue == null)
+                throw new NullNotAllowedException("Null not allowed as value");
+
             List<V> tempValues;
 
             if (map.TryGetValue(_key, out tempValues))
@@ -107,6 +115,17 @@ namespace Multimap
             else
             {
                 Console.WriteLine("The key " + _key + " could not be found");
+            }
+        }
+
+        public void Add<K2, V2>(IMultiMap<K2, V2> newMultiMap)
+            where K2 : K
+            where V2 : V
+        {                       
+            foreach (K2 newKey in newMultiMap.Keys)
+            {
+                foreach (V2 newValue in newMultiMap[newKey])
+                    Add(newKey, newValue);
             }
         }
     }

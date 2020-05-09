@@ -9,14 +9,29 @@ namespace Multimap
             var v1 = new MyClass("car");
             var v2 = new MyClass("plane");
             var v3 = new MyClass("NPC2");
+            var v4 = new MyClass2("NPC2");
             var test = new MultiMap<string, MyClass>();
+            var test2 = new MultiMap<string, MyClass2>();
 
-            test.Add("vehicle", v1);
-            test.Add("vehicle", v2);
-            test.Add("npc", v3);
-            test.Add("npc", v3);
-            test.Add("npc", v3);
+            try
+            {
+                test.Add("vehicle", v1);
+                test.Add("vehicle", v2);
+                test.Add("npc", v3);
+                test.Add("npc", v3);
+                test.Add("npc", v3);
+                test2.Add("npc", v4);
+                test2.Add("npc", v4);
+                test2.Add("npc", v4);
+                test2.Add("pc", v4);
+                test2.Add("pc", null);
+            }
+            catch (NullNotAllowedException nullException)
+            {
+                Console.WriteLine(nullException.Message);
+            }
 
+            test.Add(test2);
             Console.WriteLine("Keys: {0}", String.Join(", ", test.Keys));
             Console.WriteLine("Values: {0}", String.Join(", ", test.Values));
             Console.WriteLine("Key {1}: {0}", String.Join(", ", test["npc"]), "npc");
