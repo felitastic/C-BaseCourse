@@ -1,0 +1,6 @@
+C:\Projekte\IEnumerableTask_DozenturThomas\AufgabeAusDerReihe\IEnumeratorTask\bin\Debug\IEnumeratorTask.exe.config
+C:\Projekte\IEnumerableTask_DozenturThomas\AufgabeAusDerReihe\IEnumeratorTask\bin\Debug\IEnumeratorTask.exe
+C:\Projekte\IEnumerableTask_DozenturThomas\AufgabeAusDerReihe\IEnumeratorTask\bin\Debug\IEnumeratorTask.pdb
+C:\Projekte\IEnumerableTask_DozenturThomas\AufgabeAusDerReihe\IEnumeratorTask\obj\Debug\IEnumeratorTask.csprojAssemblyReference.cache
+C:\Projekte\IEnumerableTask_DozenturThomas\AufgabeAusDerReihe\IEnumeratorTask\obj\Debug\IEnumeratorTask.exe
+C:\Projekte\IEnumerableTask_DozenturThomas\AufgabeAusDerReihe\IEnumeratorTask\obj\Debug\IEnumeratorTask.pdb
