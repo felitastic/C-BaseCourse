@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ImPKmMrc3of6E5/v0Kbijop85uFNk+xE7fCtUAzKYszS0gPiAmXJTIQGZfsxwbJzIfemurPXP5PJKvUJHKSyKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Projekte\\Vorlesungen\\PR320\\C#BaseCourse\\WebCrawler\\WebCrawler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kille\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\kille\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\kille\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\kille\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

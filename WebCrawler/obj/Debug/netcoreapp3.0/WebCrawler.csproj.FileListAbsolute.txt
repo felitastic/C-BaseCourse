@@ -1,0 +1,24 @@
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.exe
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.deps.json
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.runtimeconfig.json
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.runtimeconfig.dev.json
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.dll
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.pdb
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.csprojAssemblyReference.cache
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.AssemblyInfoInputs.cache
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.AssemblyInfo.cs
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.dll
+C:\Projekte\C# bei Thomas Gereke\WebCrawler\WebCrawler\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.pdb
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.exe
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.deps.json
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.runtimeconfig.json
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.runtimeconfig.dev.json
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.dll
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\bin\Debug\netcoreapp3.0\WebCrawler.pdb
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.csprojAssemblyReference.cache
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.csproj.CoreCompileInputs.cache
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.AssemblyInfoInputs.cache
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.AssemblyInfo.cs
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.dll
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.pdb
+C:\Projekte\Vorlesungen\PR320\C#BaseCourse\WebCrawler\obj\Debug\netcoreapp3.0\WebCrawler.genruntimeconfig.cache
